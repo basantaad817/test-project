@@ -11,13 +11,6 @@
   --yellow: #feae00;
   --text_black: #000000;
   --light_black: #707070;
-
-  /*   
-  --text_light: #474343;
-  --bg_blue: #30308f;
-  --light_blue: #678bd8;
-  --bright_blue: #70eff3;
-  --text_white: #fff; */
 }
 
 /* global css */
@@ -89,7 +82,7 @@ button:hover {
   color: var(--bright_blue);
   transition: ease 0.5s;
 }
-
+/* dropdown arrow in navbar */
 .arrow {
   height: 100%;
   width: 22px;
@@ -234,7 +227,7 @@ how it works part started
   padding: 10px;
   margin-bottom: 15px;
 }
-.img-bg img{
+.img-bg img {
   width: 100%;
   height: auto;
 }
@@ -259,6 +252,7 @@ feedbacks
   flex: 50%;
   height: 500px;
 }
+/* text part in right side */
 .review {
   flex: 50%;
 }
@@ -316,6 +310,7 @@ blogs section starts
   align-items: baseline;
   margin: 30px 0 0 10px;
 }
+/* individual posts/ articles */
 .post {
   display: flex;
   flex-direction: column;
@@ -355,6 +350,7 @@ blogs section starts
   letter-spacing: 1px;
   margin-top: 10px;
 }
+/* button on the lower */
 #blog button {
   color: var(--light_blue);
   border: 1px solid var(--light_blue);
@@ -425,6 +421,7 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+/* all titiles in skyblue color */
 .quick-link h6,
 .newsletter h6,
 .social h6 {
@@ -445,7 +442,7 @@ footer {
   color: var(--white_2);
   transition: ease 0.4s;
 }
-
+/* newsletter, payment, social media icons */
 .social {
   width: 40%;
 }
@@ -473,6 +470,7 @@ footer {
   color: var(--white_1);
   transition: ease 0.3s;
 }
+/* payment and social media icons */
 .payment-follow {
   display: flex;
   justify-content: space-between;
@@ -544,7 +542,7 @@ responsive
   nav .navbar .nav-links {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -250%;
     display: block;
     min-width: 100%;
     background: var(--light_black);
@@ -611,39 +609,52 @@ responsive
     transform: rotate(180deg);
   }
   /* function */
-  #function{
+  #function {
     flex-wrap: wrap;
   }
-  #feedback{
+  #feedback {
     flex-wrap: wrap;
   }
-  .blog-container{
+  .blog-container {
     flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .post{
+  .post {
     width: 80%;
     margin-bottom: 5%;
   }
-
 }
 
-@media(max-width:768px){
-  .upper-part{
+@media (max-width: 768px) {
+  .upper-part {
     flex-direction: column;
     width: 90%;
   }
-  .footer-ul, .social{
+  .footer-ul,
+  .social {
     width: 100%;
     margin: 3%;
   }
-  .follow{
+  .follow {
     margin-top: 3%;
   }
-  .credit p{
+  .credit p {
     margin: 2% 0;
+  }
+  #work .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .individual {
+    margin-bottom: 15%;
+  }
+}
+@media (max-width: 400) {
+  .navbar {
+    padding: 1%;
+    margin: 1%;
   }
 }
