@@ -555,6 +555,7 @@ responsive
     justify-content: flex-start;
     align-items: center;
     margin: 0;
+    border-bottom-right-radius: 75%;
   }
   .navbar .nav-links .sidebar-logo {
     display: flex;
